@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import json
 import csv
 
@@ -30,5 +31,3 @@ with open(output_file, 'w', newline='') as csvfile:
         itemID = item['itemID']
         itemData = {key: value for key, value in item.items() if key != 'itemID'}
         writer.writerow({'itemID': itemID, 'itemData': json.dumps(itemData)})
-
-print(f"CSV file '{output_file}' has been created.")
